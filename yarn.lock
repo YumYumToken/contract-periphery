@@ -1055,14 +1055,14 @@
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@uniswap/v2-core/-/v2-core-1.0.1.tgz#af8f508bf183204779938969e2e54043e147d425"
 
-"@uniswap/v3-core@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@uniswap/v3-core/-/v3-core-1.0.0.tgz#6c24adacc4c25dceee0ba3ca142b35adbd7e359d"
-  integrity sha512-kSC4djMGKMHj7sLMYVnn61k9nu+lHjMIxgg9CDQT+s2QYLoA56GbSK9Oxr+qJXzzygbkrmuY6cwgP6cW2JXPFA==
-
 "@yarnpkg/lockfile@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@yarnpkg/lockfile/-/lockfile-1.1.0.tgz#e77a97fbd345b76d83245edcd17d393b1b41fb31"
+
+"@yumyumswap/contract-core@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@yumyumswap/contract-core/-/contract-core-1.0.1.tgz#5c3f9f36290f0e75a62db93ef89f419430d0a081"
+  integrity sha512-s1JOSis4gFzJVsFQILb08reQe+AMzjklUQI6gQ1bCruh/A/5mM0meihRxmvtIrC4t8KBwp2SccP0kfnZo5jOFw==
 
 abort-controller@^3.0.0:
   version "3.0.0"

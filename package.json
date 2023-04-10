@@ -1,20 +1,20 @@
 {
-  "name": "@uniswap/v3-periphery",
-  "description": "🎚 Peripheral smart contracts for interacting with Uniswap V3",
+  "name": "@yumyumswap/contract-periphery",
+  "description": "🎚 Peripheral smart contracts for interacting with YumYumSwap",
   "license": "GPL-2.0-or-later",
   "publishConfig": {
     "access": "public"
   },
   "version": "1.4.3",
-  "homepage": "https://uniswap.org",
+  "homepage": "https://yumyumswap.com",
   "keywords": [
     "uniswap",
     "periphery",
-    "v3"
+    "yumyumswap"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Uniswap/uniswap-v3-periphery"
+    "url": "https://github.com/YumYumToken/contract-periphery"
   },
   "files": [
     "contracts/base",
@@ -32,7 +32,7 @@
     "@openzeppelin/contracts": "3.4.2-solc-0.7",
     "@uniswap/lib": "^4.0.1-alpha",
     "@uniswap/v2-core": "1.0.1",
-    "@uniswap/v3-core": "1.0.0",
+    "@yumyumswap/contract-core": "1.0.1",
     "base64-sol": "1.0.1"
   },
   "devDependencies": {
