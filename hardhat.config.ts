@@ -3,6 +3,7 @@ import '@nomiclabs/hardhat-etherscan'
 import '@nomiclabs/hardhat-waffle'
 import 'hardhat-typechain'
 import 'hardhat-watcher'
+import 'hardhat-deploy'
 import { resolve } from 'path'
 import { config as dotenvConfig } from 'dotenv'
 dotenvConfig({ path: resolve(__dirname, './.env') })
@@ -122,5 +123,8 @@ export default {
       files: ['./test/**/*'],
       verbose: true,
     },
+  },
+  namedAccounts: {
+    deployer: 0,
   },
 }
