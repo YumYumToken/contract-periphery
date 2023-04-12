@@ -3,6 +3,9 @@ import '@nomiclabs/hardhat-etherscan'
 import '@nomiclabs/hardhat-waffle'
 import 'hardhat-typechain'
 import 'hardhat-watcher'
+import { resolve } from 'path'
+import { config as dotenvConfig } from 'dotenv'
+dotenvConfig({ path: resolve(__dirname, './.env') })
 
 const LOW_OPTIMIZER_COMPILER_SETTINGS = {
   version: '0.7.6',
@@ -78,11 +81,30 @@ export default {
     optimism: {
       url: `https://optimism-mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
     },
+    "base-goerli": {
+      url: `https://goerli.base.org/`,
+      accounts: [`0x${process.env.PRIVATE_KEY}`],
+    },
   },
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey: process.env.ETHERSCAN_API_KEY,
+    // apiKey: process.env.ETHERSCAN_API_KEY,
+    apiKey: {
+      // Basescan doesn't require an API key, however
+      // Hardhat still expects an arbitrary string to be provided.
+      "base-goerli": "PLACEHOLDER_STRING"
+     },
+     customChains: [
+      {
+        network: "base-goerli",
+        chainId: 84531,
+        urls: {
+         apiURL: "https://api-goerli.basescan.org/api",
+         browserURL: "https://goerli.basescan.org"
+        }
+      }
+    ]
   },
   solidity: {
     compilers: [DEFAULT_COMPILER_SETTINGS],
