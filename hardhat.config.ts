@@ -98,7 +98,8 @@ export default {
     apiKey: {
       // Basescan doesn't require an API key, however
       // Hardhat still expects an arbitrary string to be provided.
-      "base-goerli": "PLACEHOLDER_STRING"
+      "base-goerli": "PLACEHOLDER_STRING",
+      pulse: "abc"
      },
      customChains: [
       {
@@ -107,6 +108,14 @@ export default {
         urls: {
          apiURL: "https://api-goerli.basescan.org/api",
          browserURL: "https://goerli.basescan.org"
+        }
+      },
+      {
+        network: "pulse",
+        chainId: 369,
+        urls: {
+         apiURL: "https://scan.pulsechain.com/api",
+         browserURL: "https://scan.pulsechain.com"
         }
       }
     ]
@@ -130,5 +139,6 @@ export default {
   },
   namedAccounts: {
     deployer: 0,
+    // deployer: `ledger://${process.env.LEDGER_WALLET}`
   },
 }

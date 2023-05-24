@@ -26,7 +26,7 @@ contract NonfungibleTokenPositionDescriptor is INonfungibleTokenPositionDescript
     /// @dev A null-terminated string
     bytes32 public immutable nativeCurrencyLabelBytes;
 
-    constructor(address _WETH9, bytes32 _nativeCurrencyLabelBytes) {
+    constructor(address _WETH9, bytes32 _nativeCurrencyLabelBytes) public {
         WETH9 = _WETH9;
         nativeCurrencyLabelBytes = _nativeCurrencyLabelBytes;
     }
