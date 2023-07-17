@@ -93,6 +93,7 @@ export default {
     base: {
       url: `https://developer-access-mainnet.base.org/`,
       accounts: [`0x${process.env.PRIVATE_KEY}`],
+      gasPrice: 1500000000
     },
   },
   etherscan: {
@@ -122,7 +123,15 @@ export default {
          apiURL: "https://scan.pulsechain.com/api",
          browserURL: "https://scan.pulsechain.com"
         }
-      }
+      },
+      {
+        network: "base",
+        chainId: 8453,
+        urls: {
+         apiURL: "https://api.basescan.org/api",
+         browserURL: "https://basescan.org"
+        }
+      },
     ]
   },
   solidity: {
