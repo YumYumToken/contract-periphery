@@ -90,6 +90,10 @@ export default {
       url: `https://rpc.pulsechain.com/`,
       accounts: [`0x${process.env.PRIVATE_KEY}`],
     },
+    base: {
+      url: `https://developer-access-mainnet.base.org/`,
+      accounts: [`0x${process.env.PRIVATE_KEY}`],
+    },
   },
   etherscan: {
     // Your API key for Etherscan
@@ -99,6 +103,7 @@ export default {
       // Basescan doesn't require an API key, however
       // Hardhat still expects an arbitrary string to be provided.
       "base-goerli": "PLACEHOLDER_STRING",
+      base: `${process.env.BASESCAN_API_KEY}`,
       pulse: "abc"
      },
      customChains: [
