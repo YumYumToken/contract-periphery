@@ -1400,10 +1400,10 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@yarnpkg/lockfile/-/lockfile-1.1.0.tgz#e77a97fbd345b76d83245edcd17d393b1b41fb31"
 
-"@yumyumswap/contract-core@4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@yumyumswap/contract-core/-/contract-core-4.0.1.tgz#a43db2a33c0ed5369e693581eaf1dcbe257cbf68"
-  integrity sha512-wNsf1SHs0mxb7ErI25Tou1yayJe3Ds6qm/uyuJXgodsE3AZYEsjUTuSYvS5tP+/Npc6NYnEKNLixLOeIQvwg6Q==
+"@yumyumswap/contract-core@5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@yumyumswap/contract-core/-/contract-core-5.0.1.tgz#b9359674b335eef60525493ec60a696a3841208f"
+  integrity sha512-Lso9DJeIlD7+ve9J4BO1XNW1RAXN39FLQZArBCl7HjxGcDN9QfsvDmFV20r3Bt5eyKpQSapjkIz/5XQfr9MdFQ==
   dependencies:
     dotenv "^16.0.3"
 
